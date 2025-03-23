@@ -1,16 +1,20 @@
 import 'package:ptest/ptest.dart';
-import 'package:test/test.dart';
+import 'package:test/expect.dart';
+
+// Example of a function to test.
+int triple(int value) => value * 3;
 
 void main() {
   pTest(
-    'Example of a test for integer.',
-    generateInput: (random) => random.int(),
+    'Returns value that is 3 times bigger than the input.',
+    generateInput: (random) => random.integer(),
     body: (input) {
-      final sut = toTestFun;
+      // System Under Test.
+      const sut = triple;
 
-      expect(sut(input), input + 1);
+      final actual = sut(input);
+
+      expect(actual, input * 3);
     },
   );
 }
-
-int toTestFun(int input) => input + 1;
