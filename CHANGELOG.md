@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.1.0
 
-- Initial version.
+- Initial version with a basic set of random extensions.
