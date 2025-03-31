@@ -1,5 +1,5 @@
 name: ptest
-version: 0.1.1
+version: 0.2.0
 description: A package to conduct property-based unit testing of Dart code.
 repository: https://github.com/Sevastyan/ptest
 issue_tracker: https://github.com/Sevastyan/ptest/issues
